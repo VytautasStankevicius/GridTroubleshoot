@@ -1,0 +1,58 @@
+.container{
+    display: grid;
+    width:100%;
+    height:800px;
+    gap: 10px;
+    grid-template-areas:
+    "one one two three four"
+    "five five six seven four"
+    "five five eight nine ten";
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr
+}
+
+.container img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.container > .p1 {
+    grid-area: one;
+}
+
+.container > .p2 {
+    grid-area: two;
+}
+
+.container > .p3 {
+    grid-area: three;
+}
+
+.container > .p4 {
+    grid-area: four;
+}
+
+.container > .p5 {
+    grid-area: five;
+}
+
+.container > .p6 {
+    grid-area: six;
+}
+
+.container > .p7 {
+    grid-area: seven;
+}
+
+.container > .p8 {
+    grid-area: eight;
+}
+
+.container > .p9 {
+    grid-area: nine;
+}
+
+.container > .p10 {
+    grid-area: ten;
+}
